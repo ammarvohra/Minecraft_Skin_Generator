@@ -62,7 +62,7 @@ def run_inference(prompt, stable_diffusion_model, num_inference_steps, guidance_
 
 
 # Define Gradio UI components
-prompt = gr.Textbox(label="Your Prompt", info="What the Minecraft Skin should look like")
+prompt = gr.Textbox(label="Your Prompt for skin", info="What the Minecraft Skin should look like")
 stable_diffusion_model = gr.Dropdown(['2', 'xl'], value="xl", label="Stable Diffusion Model", info="Choose which Stable Diffusion Model to use, xl understands prompts better")
 num_inference_steps = gr.Slider(label="Number of Inference Steps", info="The number of denoising steps of the image. More denoising steps usually lead to a higher quality image at the cost of slower inference", minimum=1, maximum=50, value=25, step=1)
 guidance_scale = gr.Slider(label="Guidance Scale", info="Controls how much the image generation process follows the text prompt. Higher values make the image stick more closely to the input text.", minimum=0.0, maximum=10.0, value=7.5, step=0.1)
