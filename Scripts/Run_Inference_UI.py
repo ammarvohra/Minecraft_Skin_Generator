@@ -89,6 +89,7 @@ gr.Interface(
     ],
     outputs=[
         gr.Image(label="Generated Minecraft Skin Image Asset", elem_classes="pixelated checkered"),
+        gr.Image(label="Converted PNG"),
         gr.Model3D(clear_color=[0.0, 0.0, 0.0, 0.0],  label="3D Model")
     ],
     title="Minecraft Skin Generator",
